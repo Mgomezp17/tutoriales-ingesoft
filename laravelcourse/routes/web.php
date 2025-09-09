@@ -32,3 +32,14 @@ Route::post('/image/save', 'App\Http\Controllers\ImageController@save')->name("i
 Route::get('/image-not-di', 'App\Http\Controllers\ImageNotDIController@index')->name("imagenotdi.index");
 
 Route::post('/image-not-di/save', 'App\Http\Controllers\ImageNotDIController@save')->name("imagenotdi.save");
+
+// Drivers
+Route::get('/driver', 'App\Http\Controllers\DriverController@index')->name("driver.index");
+
+Route::get('/driver/create', 'App\Http\Controllers\DriverController@create')->name("driver.create");
+
+Route::post('/driver/save', 'App\Http\Controllers\DriverController@save')->name("driver.save");
+
+Route::get('/drivers/show', 'App\Http\Controllers\DriverController@show')->name('driver.show');
+
+Route::get('/driver/statistics', 'App\Http\Controllers\DriverController@statistics')->name('driver.statistics');
