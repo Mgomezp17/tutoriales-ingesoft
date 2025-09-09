@@ -47,8 +47,9 @@
         </div>
     </header>
     <!-- header -->
-    <div class="container my-4">
+    <div class="container py-4" style="min-height: calc(100vh - (88px + 94.4px + 72px)); overflow-y: auto;">
         @yield('content')
+    </div>
     </div>
     <!-- footer -->
     <div class="copyright py-4 text-center text-white">
